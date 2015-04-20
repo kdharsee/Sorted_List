@@ -1,0 +1,70 @@
+TESTPLAN
+
+Test Case 1: Example from announcement
+Build List of {7,5,3}
+Next Item -> 7
+Next Item -> 5
+Remove 5
+Insert 4
+Next Item -> 4
+
+
+Test Case 2: Example from announcement
+Build List of {7,5,3}
+Next Item -> 7
+Next Item -> 5
+Remove 5
+Insert 6
+Next Item -> 3
+
+Test Case 3: Removal Test
+List of {7,6,3} (5 previously removed)
+Remove 5 -> No effect
+Remove 1000 -> No effect
+Remove NULL -> No effect 
+
+Test Case 4: Check Sorting
+Insert 1 
+Insert 20
+Insert 17
+Insert 34
+Get Next -> 34
+Get Next -> 20
+Get Next -> 17
+Get Next -> 1
+
+Test Case 5: Push Iterator to end of list
+Build List of {4,3,2,1}
+Next Item -> 4
+Next Item -> 3
+Next Item -> 2
+Next Item -> 1
+
+Test Case 6: Two Iterators, One list
+Build List of {4,3,2,1}
+Iterator 1 Next Item -> 4
+Iterator 1 Next Item -> 3
+Iterator 2 Next Item -> 4
+Iterator 2 Next Item -> 3
+Iterator 2 Next Item -> 2
+Iterator 2 Next Item -> 1
+Iterator 1 Next Item -> 2
+Iterator 1 Next Item -> 1
+
+Test Case 7: Check with different data type / compare function
+Build List of {d, c, b, a}
+Next Item -> d
+Next Item -> c
+Next Item -> b
+Next Item -> a
+
+Test Case 8: Duplicate Entries
+Insert 1
+Insert 2
+Insert 3
+Insert 3, function returns 0
+
+Test Case 9: Null Pointers
+Remove from NULL list, function returns 0
+Remove NULL from list, function returns 0
+Create Iterator from NULL list, returns NULL
